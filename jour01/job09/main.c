@@ -20,4 +20,7 @@ int main()
     }
 
     printf("%s - Prix: %.2f euros ; Qte.: %i\n", nom, prix_unitaire, quantite_stock);
+    printf("Attention notre produit %s a subit une augmentation de 10%c\n",nom, '%');
+    prix_unitaire += prix_unitaire * 10 / 100;
+    printf("%s - Prix: %.2f euros ; Qte.: %i\n", nom, prix_unitaire, quantite_stock);
 }
